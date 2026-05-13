@@ -1,0 +1,98 @@
+/* Core Page Styling */
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+    /* Using your image as a fixed background */
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), 
+                url('image_4a3e72.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Glassmorphism Container */
+main {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Header Section */
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 2.2rem;
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    color: #666;
+    font-style: italic;
+}
+
+/* Activity List Styling */
+h2 {
+    font-size: 1.4rem;
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 8px;
+    margin-bottom: 1.5rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 12px;
+    transition: transform 0.2s ease;
+}
+
+li:hover {
+    transform: translateX(8px);
+}
+
+/* Link/Button Styling */
+a {
+    display: block;
+    padding: 12px 18px;
+    background-color: #ffffff;
+    color: #3498db;
+    text-decoration: none;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    background-color: #3498db;
+    color: #ffffff;
+    border-color: #3498db;
+    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+}
+
+/* Responsive Tweak */
+@media (max-width: 480px) {
+    body {
+        padding: 20px;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+}
